@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zurdust</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #111;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 64px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #999;
+      font-size: 18px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: #ff0059;
+      color: #fff;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e6004e;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 60px;
+      color: #ff0059;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .service {
+      flex: 1 1 30%;
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 0, 89, 0.2);
+    }
+
+    .service h3 {
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .service p {
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #1c1c1c;
+      padding: 60px 20px;
+      border-top: 1px solid #333;
+    }
+
+    .contact h2 {
+      font-size: 32px;
+      color: #ff0059;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Zurdust.</h1>
+    <p>Design. Code. Zindagi.</p>
+    <a href="#services" class="btn">Let’s Build Something</a>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="container services">
+      <div class="service">
+        <h3>Web Design</h3>
+        <p>Responsive sites built for clarity, speed, and performance across devices.</p>
+      </div>
+      <div class="service">
+        <h3>SEO Optimization</h3>
+        <p>Rank higher on Google with smart strategy and fast-loading design.</p>
+      </div>
+      <div class="service">
+        <h3>WordPress Support</h3>
+        <p>Bug fixes, updates, and support to keep your site smooth and secure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Ready to go Zurdust?</h2>
+    <a href="mailto:your@email.com" class="btn">Contact Me</a>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 Zurdust. Built with love.
+  </div>
+
+</body>
+</html>
